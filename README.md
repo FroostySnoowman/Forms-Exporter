@@ -18,15 +18,15 @@ Google:
 3. Wait until it's finished creating, then "Select Project".
 4. Go back to the "Welcome" (click the Google Cloud in top left corner) screen and click "APIs & Services*.
 5. Near the top middle of your screen, choose "Enable APIs and Services".
-6. Search/select the "Google Drive API" and "Google Sheets API".
+6. Search/select the "Google Drive API" and "Google Forms API".
 7. Head back to your project's home page (click the Google Cloud in top left corner).
 8. Select "IAM & Admin".
 9. Choose "Service Accounts" from the left navigation bar.
 10. Click "Create Service Account" near the top middle of your screen.
 11. Give your Service Account any name you want and the service account ID any name you want (I recommend just leaving it alone if your service is a unique name).
-12. Copy the service account ID email addres (mine for example is grwuyafhwa@fhwjafa.iam.gserviceaccount.com)
+12. Copy the service account ID email addres (mine for example is formsexporter@formsexporter.iam.gserviceaccount.com)
 13. Click "Create and Continue".
-14. Go to your google sheet at https://sheets.google.com/ and "Share" the sheet with that service account ID email address.
+14. Go to your google sheet at https://forms.google.com/ and "Share" the sheet with that service account ID email address.
 15. Now, go back to the "Service Accounts" page and click the 3 dots "Actions" button.
 16. Choose "Manage keys".
 17. Click "Add Key" and "Create New Key".
