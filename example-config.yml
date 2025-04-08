@@ -1,0 +1,25 @@
+General:
+    TOKEN: ""
+    STATUS: "online"
+
+    ACTIVITY: "watching"
+    DOING_ACTIVITY: "Applications"
+    STREAMING_ACTIVITY_TWITCH_URL: ""
+
+    EMBED_COLOR: "#36FF00"
+
+    DELAY_SECONDS: 120
+
+    GUILD_ID: 1234
+    CHANNEL_ID: 1234
+
+Google:
+  GOOGLE_SERVICE_ACCOUNT_FILE: "service_account.json"
+
+Forms:
+  - GOOGLE_FORM_ID: "1Kh3_6mihMxKRC2QlbscgWI_wxdYvxep6vvQuYvvP5WI"
+    ExportFormat: "csv"
+    FILE_NAME: "exported_form_responses.csv"
+
+MappingOverrides:
+    "36452ba7": "Boobie"

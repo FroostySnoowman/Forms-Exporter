@@ -199,6 +199,8 @@ class FormsCog(commands.Cog):
                     embed = discord.Embed(title="New Response", description=response_text, color=discord.Color.from_str(embed_color))
                     embed.timestamp = datetime.now()
 
+                    embed.set_author(name=self.bot.user.name, icon_url=self.bot.user.display_avatar.url)
+
                     if guild:
                         embed.set_thumbnail(url=guild.icon.url if guild.icon else None)
 
