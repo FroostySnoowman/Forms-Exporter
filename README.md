@@ -32,3 +32,5 @@ Google:
 17. Click "Add Key" and "Create New Key".
 18. Make sure JSON is selected and "Create". This will download a necessary file.
 19. Upload that file to the bot and name it `service_account.json` (or whatever you put in your config.yml as `GOOGLE_SERVICE_ACCOUNT_FILE`).
+
+To get the correct mapping overrides, you will need to run the `export.py` script before the `main.py` bot to correctly export the data to a csv file and to get the correct ids associated with each question.
