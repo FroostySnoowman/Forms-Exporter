@@ -12,6 +12,7 @@ General:
 
     GUILD_ID: 1234
     CHANNEL_ID: 1234
+    PING_ROLE_IDS: []
 
 Google:
   GOOGLE_SERVICE_ACCOUNT_FILE: "service_account.json"

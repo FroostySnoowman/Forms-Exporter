@@ -18,6 +18,7 @@ def load_config():
 config = load_config()
 embed_color = config["General"]["EMBED_COLOR"]
 delay_seconds = config["General"]["DELAY_SECONDS"]
+ping_role_ids = config["General"]["PING_ROLE_IDS"]
 
 def get_credentials():
     creds_path = os.path.join(config["Google"]["GOOGLE_SERVICE_ACCOUNT_FILE"])
@@ -204,7 +205,9 @@ class FormsCog(commands.Cog):
                     if guild:
                         embed.set_thumbnail(url=guild.icon.url if guild.icon else None)
 
-                    await channel.send(embed=embed)
+                    ping_roles = None if not ping_role_ids else " ".join(f"<@&{role_id}>" for role_id in ping_role_ids)
+
+                    await channel.send(content=ping_roles, embed=embed)
 
     @check_stopped_loop.before_loop
     async def check_stopped_loop_before(self):
